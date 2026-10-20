@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <style>
+    .title { font: bold 30px sans-serif; fill: #17212b; }
+    .head { font: bold 22px sans-serif; fill: #fff; }
+    .pin { font: 19px monospace; fill: #17212b; }
+    .note { font: 18px sans-serif; fill: #394a59; }
+    .small { font: 16px sans-serif; fill: #394a59; }
+    .box { stroke: #17212b; stroke-width: 3; rx: 18; }
+    .line { fill: none; stroke-width: 4; }
+  </style>
+  <rect width="1200" height="720" fill="#f6f8fa"/>
+  <text x="600" y="48" text-anchor="middle" class="title">BlackPill STM32F411 ↔ ST7735S 80×160 (13-pin FPC)</text>
+
+  <rect x="70" y="105" width="400" height="500" class="box" fill="#d9ecff"/>
+  <rect x="70" y="105" width="400" height="58" rx="18" fill="#1769aa"/>
+  <text x="270" y="143" text-anchor="middle" class="head">BlackPill STM32F411</text>
+
+  <text x="105" y="220" class="pin">PA2  /CS</text>
+  <text x="105" y="275" class="pin">PA3  /RST</text>
+  <text x="105" y="330" class="pin">PA4  RS / DC</text>
+  <text x="105" y="385" class="pin">PA5  SCLK</text>
+  <text x="105" y="440" class="pin">PA6  SDIN / MOSI</text>
+  <text x="105" y="495" class="pin">PA7  BL+ (test)</text>
+  <text x="105" y="550" class="pin">3V3</text>
+  <text x="105" y="585" class="pin">GND</text>
+
+  <rect x="730" y="105" width="400" height="500" class="box" fill="#fff2cc"/>
+  <rect x="730" y="105" width="400" height="58" rx="18" fill="#aa6e00"/>
+  <text x="930" y="143" text-anchor="middle" class="head">LCD ST7735S / 13-pin FPC</text>
+
+  <text x="770" y="220" class="pin">7   /CS</text>
+  <text x="770" y="275" class="pin">6   /RST</text>
+  <text x="770" y="330" class="pin">5   RS / DC</text>
+  <text x="770" y="385" class="pin">4   SCLK</text>
+  <text x="770" y="440" class="pin">3   SDIN</text>
+  <text x="770" y="495" class="pin">12  LEDA / BL+</text>
+  <text x="770" y="550" class="pin">10  VDD 3.3 V</text>
+  <text x="770" y="585" class="pin">8,13 GND; 11 LEDK / BL-</text>
+
+  <path d="M 405 214 H 720" class="line" stroke="#d7263d"/>
+  <path d="M 405 269 H 720" class="line" stroke="#e05d00"/>
+  <path d="M 405 324 H 720" class="line" stroke="#7b2cbf"/>
+  <path d="M 405 379 H 720" class="line" stroke="#0066cc"/>
+  <path d="M 405 434 H 720" class="line" stroke="#007c46"/>
+  <path d="M 405 489 H 720" class="line" stroke="#d18b00"/>
+  <path d="M 405 544 H 720" class="line" stroke="#c7254e"/>
+  <path d="M 405 579 H 720" class="line" stroke="#3d3d3d"/>
+
+  <text x="600" y="655" text-anchor="middle" class="note">Panel pracuje tylko z logiką 3,3 V. Pin 1, 2 i 9: NC.</text>
+  <text x="600" y="687" text-anchor="middle" class="small">PA7 → LEDA jest schematem testowym; przy większym prądzie podświetlenia użyj tranzystora.</text>
+</svg>
