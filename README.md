@@ -49,6 +49,17 @@ make flash LCD_PANEL=0
 Po uruchomieniu program pokazuje przykładowy ekran BMS 13S. W `main.c` są
 również jasno opisane ustawienia obu paneli.
 
+## Arduino IDE
+
+Wersja gotowa do wgrania z Arduino IDE jest w katalogu
+[`arduino/BlackPill_ST7735_BMS`](arduino/BlackPill_ST7735_BMS). Nie wymaga
+bibliotek Adafruit: używa dokładnie tej samej sekwencji ST7735S i tych samych
+profili paneli, które zostały sprawdzone w wersji bare-metal.
+
+Pełny schemat połączeń 13-pinowego FPC jest w
+[`docs/wiring.md`](docs/wiring.md), a jako rysunek w
+[`docs/blackpill-st7735-wiring.svg`](docs/blackpill-st7735-wiring.svg).
+
 ## Ważne
 
 Oba panele używają tego samego przesunięcia obszaru widzialnego: X=26, Y=1.
